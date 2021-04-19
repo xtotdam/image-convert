@@ -2,7 +2,10 @@
 
 Converts image files into sequence of escape codes, ready to be inserted into a C program.
 Was created with easter eggs in mind.
-See example below
+You can also add joke comments inside the code - see the code of the script.
+
+* Be aware that `#define` directives are global for a [single compilation unit](https://en.wikipedia.org/wiki/Single_Compilation_Unit).
+
 
 ```sh
 usage: image_convert.py [-h] [-r ROUNDS] [-w LINEWRAP] [-f FUNCTION] [-o OUTFILE] [-s] image
@@ -24,6 +27,8 @@ optional arguments:
                         Name of output file
   -s, --shuffle         Shuffle letters or not
 ```
+
+## Example C code
 
 ```c
 #include <stdio.h>
@@ -65,4 +70,8 @@ O E R F O I N B S D L C C A K O K R Z S C C D L C C A F X K O K O Z S P D
 );}
 ```
 
+## How it looks like
+
+![cat8x](https://user-images.githubusercontent.com/5108025/115274056-f1b7bd80-a148-11eb-8e27-c285ace6bfc0.png)
+(8x)   :arrow_right:
 ![Screenshot_20210419_151931](https://user-images.githubusercontent.com/5108025/115235504-f23d5d80-a122-11eb-9f4b-7ab0655642cd.png)
